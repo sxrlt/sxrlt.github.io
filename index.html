@@ -232,6 +232,155 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/Install_Django/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="桑心人">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="桑心人的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/29/Install_Django/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T20:04:39+08:00">
+                2018-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<h2 id="Django如何创建一个项目并进行访问："><a href="#Django如何创建一个项目并进行访问：" class="headerlink" title="Django如何创建一个项目并进行访问："></a>Django如何创建一个项目并进行访问：</h2></blockquote>
+<h4 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h4><pre><code>- python-3.6.5环境（可自行下载安装）、virtualenv虚拟环境
+</code></pre><h4 id="下载virtualenv："><a href="#下载virtualenv：" class="headerlink" title="下载virtualenv："></a>下载virtualenv：</h4><pre><code>- 通过win+r快捷键打开运行输入cmd进入命令提示符
+- 下载virtualenv
+   pip install virtualenv  
+  # 注意运行pip时要保证python的环境变量配置正确才能直接运行
+</code></pre><h4 id="创建虚拟环境："><a href="#创建虚拟环境：" class="headerlink" title="创建虚拟环境："></a>创建虚拟环境：</h4><pre><code>- 创建一个文件夹env(名字可自拟)当作虚拟环境，位置可自己设置
+- 切换到创建的文件夹目录下
+- 创建一个名为djenv虚拟环境
+  virtualenv --no-site-packages djenv  
+- 切换到创建的虚拟环境目录下的Scripts文件加下
+  cd djenv\Scripts
+- 进入虚拟环境
+  activate
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/14187384-b909803e229b5929.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="示例"></p>
+<pre><code>- 查看虚拟环境已有的包
+  pip list
+</code></pre><h4 id="下载django并创建django项目"><a href="#下载django并创建django项目" class="headerlink" title="下载django并创建django项目"></a>下载django并创建django项目</h4><pre><code>- 下载django(这里我用的1.11版本)
+  pip install django==1.11 
+- 查看下载的django
+  pip list    # 即可看到下载的django
+- 新建一个文件夹workspace(名字可自拟)用于放项目代码
+- 切换到创建的文件夹下（注意：在虚拟环境下）
+- 创建第一个diango项目
+  django-admin startproject day01
+- 启动django项目
+  python manage.py runserver
+</code></pre><h4 id="访问项目"><a href="#访问项目" class="headerlink" title="访问项目"></a>访问项目</h4><pre><code>- 在相应的浏览器输入ip地址120.0.0.1:8000即可访问自己的第一个项目
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/14187384-1460675592132cd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="示例"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/Python_Idiom/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -648,7 +797,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
